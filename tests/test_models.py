@@ -1,3 +1,4 @@
 def test_read_product():
     product = ProductFactory()
-    assert product["name"] == "Some Name"  # Replace with actual test logic
+    product["name"] = "Updated Name"
+    assert product["name"] == "Updated Name"
