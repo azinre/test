@@ -1,8 +1,10 @@
 from factory import Factory, Faker
 
+from tests.factories import ProductFactory
+
 def test_read_product():
     product = ProductFactory()
-    assert product["name"] == "Some Name"  # Replace with actual test logic
+    assert product["name"] == "Some Name"  
     
 def test_update_product():
     product = ProductFactory()
@@ -12,7 +14,7 @@ def test_update_product():
 def test_delete_product():
     product = ProductFactory()
     del product
-    assert product is None  # Adapt logic as necessary
+    assert product is None  
     
 def test_search_by_name():
     product = ProductFactory(name="Test Product")
