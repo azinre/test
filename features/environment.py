@@ -1,5 +1,7 @@
+import sys
+sys.path.insert(0, '/Users/Azin/test')
 from app import app
-from behave import before, after
+
 
 # Set up Flask app before the tests
 def before_all(context):
@@ -8,3 +10,4 @@ def before_all(context):
 # Clean up after the tests
 def after_all(context):
     pass
+
