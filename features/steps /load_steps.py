@@ -1,6 +1,9 @@
-# features/steps/load_steps.py
+import sys
+sys.path.insert(0, '/Users/Azin/test')
+
 from behave import given
-from app import products, Product  # Assuming you have a Product model in your app
+
+from app import products, Product 
 
 @given('the following products exist in the system')
 def step_impl(context):

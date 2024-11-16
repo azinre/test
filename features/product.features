@@ -1,4 +1,3 @@
-# features/products.feature
 Feature: Product management
 
   Scenario: Loading initial product data
