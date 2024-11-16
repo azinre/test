@@ -1,0 +1,8 @@
+# features/products.feature
+Feature: Product management
+
+  Scenario: Loading initial product data
+    Given the following products exist in the system
+      | id | name         | category    | available |
+      | 1  | Product 1    | Category A  | True      |
+      | 2  | Product 2    | Category B  | False     |
