@@ -1,6 +1,5 @@
-from factory import Factory, Faker
-
-from tests.factories import ProductFactory
+from factories import Factory, Faker
+from factories import ProductFactory
 
 def test_read_product():
     product = ProductFactory()
