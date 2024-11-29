@@ -1,8 +1,8 @@
-from factory import Factory, Faker # type: ignore
+from factory import Factory, Faker 
 
 class ProductFactory(Factory):
     class Meta:
-        model = dict  # Example: replace with your actual Product model
+        model = dict  
 
     id = Faker("uuid4")
     name = Faker("word")
